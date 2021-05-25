@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script scr="./lib/vue.js"></script>
+<style>
+    .notebook,.input,.preview{
+        /* border:1px solid aqua; */
+        height: 1000px;
+    }
+    .input{
+        background-color: cornflowerblue;
+        width: 40%;
+        position:absolute;
+        left: 20%;
+        top:0%;
+    }
+    .preview{
+        background-color: aquamarine;
+        width: 40%;
+        position:absolute;
+        left: 60%;
+        top:0%;
+    }
+    .notebook{
+        background-color: beige;
+        width: 20%;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+    }
+</style>
+</head>
+<body>
+    <div id="notebook">
+        <div class="notebook">notebook</div>
+        <div class="input">input</div>
+        <div class="preview">preview</div>
+    </div>
+    <script>
+        var vm = new Vue({
+            el:'#notebook'
+        })
+    </script>
+</body>
+</html>
