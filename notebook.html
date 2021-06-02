@@ -76,6 +76,9 @@
                 content(val,oldval){
                     console.log("new: ",val," old: ",oldval)
                 }
+            },
+            creat(){
+                this.content=localStorage.getItem('content') || "you can write in **markdown**"
             }
         })
     </script>
