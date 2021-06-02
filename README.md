@@ -13,3 +13,5 @@
 - git checkout main
 - git merge develop
 - git push origin main 
+- git log 查看head在哪个版本
+- git reset --hard bc5c（绝对版本号）
