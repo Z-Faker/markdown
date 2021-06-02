@@ -54,7 +54,6 @@
             <textarea class="textarea" v-model="content"></textarea>
         </div>
         <div class="preview" v-html="markdownPreview">
-            {{markdownPreview}}
         </div>
     </div>
     <script>
@@ -65,7 +64,7 @@
         var vm = new Vue({
             el:'#notebook',
             data:{
-                content:"test"
+                content:''
             },
             computed:{
                 markdownPreview(){
@@ -77,7 +76,7 @@
                     console.log("new: ",val," old: ",oldval)
                 }
             },
-            creat(){
+            created(){
                 this.content=localStorage.getItem('content') || "you can write in **markdown**"
             }
         })
